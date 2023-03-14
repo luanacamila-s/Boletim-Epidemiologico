@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    width: 50%;
+    padding-left: 50px;   
+}
+.main-container .header {
+    display: flex;
+    z-index: 99;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+.main-container .header h1 {
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.main-container .header .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main-container .header .infos {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 1rem
+}
+.main-container .header .infos .date {
+  color: red;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.corona-image {
+    background-image:   
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../images/corona.png");
+    background-size: cover;
+    position: absolute; 
+    width: 300px;
+    height: 200px;
+    right: 150px;
+    top: -50px;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.column-info {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+}
+.column-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    color: #FFF;
+    font-size: 1rem;
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    background: red;
+}
+.small-item {
+    justify-content: center;
+    padding-left: 0px;
+    text-align: center;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.yellow-bg {
+    background: #FFBF00
+}
+.corona-image-cartoon {
+    background: url("../images/cartoon-corona.png");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 470px;
+    left: 240px;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 140px;
+    gap: 40px;
+    align-items: center;
+}
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+footer .contact {
+    width: 200px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    color: darkred;
+    font-weight: bolder;
+}
